@@ -9,7 +9,7 @@ Click the Plus in the upper right corner to add a new ball. This could be a mont
 All changes are saved to local storage. 
 
 In this screenshot, Bob, Alice, Fred and Janice are figure out who can pay what for their upcoming camping trip. They almost got the whole thing paid for, but someone still needs to cover the last $273.
-![Screenshot](https://github.com/B-Dionysus/budget/blob/master/screenShot.PNG)
+![Screenshot](https://github.com/B-Dionysus/budget/blob/master/screenshot.PNG)
 
 ToDo: 
  [ ] Add a way to export/share the budgets
