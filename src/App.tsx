@@ -3,7 +3,54 @@ import {useEffect, useState} from "react"
 import {budgetBall} from "./types/interfaces"
 import BudgetBall from "./components/BudgetBall"
 
+// // if (process.env.NODE_ENV !== 'production') {
+//   require('dotenv').config();
+// // }
+// // process.env.AWS_SDK_LOAD_CONFIG="true"; 
+// let AWS= require ("aws-sdk");
+// AWS.config.update({region: 'us-east-1'});
+// console.log(AWS.config);
 
+// // AWS.config.loadFromPath('../credentials'); 
+
+// const tableName = "lexicon-entries"
+// var dynamodb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
+// var ddbDocumentClient = new AWS.DynamoDB.DocumentClient();
+
+// async function logSingleItem(){
+//   try {
+//       var params = {
+//           Key: {
+//            "id": {"S": "1625771324489.1987"} 
+//           }, 
+//           TableName: tableName
+//       };
+//       var result = await dynamodb.getItem(params).promise()
+//       console.log(JSON.stringify(result))
+//   } catch (error) {
+//       console.error(error);
+//   }
+// }
+// logSingleItem()
+// import AWS from '@aws-amplify/core';
+ 
+// 
+// var AWS = require("aws-sdk");
+
+// AWS.config.getCredentials(function(err:any) {
+//   if (err) console.log(err.stack);
+//   // credentials not loaded
+//   else {
+//     console.log("Access key:", AWS.config.credentials.accessKeyId);
+//   }
+// });
+
+// console.log("Region: ", AWS.config.region);
+import { addEntry }  from './graphql/mutations';
+import awsconfig from './aws-exports';
+import { API, graphqlOperation } from "aws-amplify";
+API.configure(awsconfig);
+ 
 function App() {
   const [budget,setBudget]=useState([{amount: 100, color: "888888", id: 0, name: "Main"}]);
   const [total, setTotal]=useState(100);

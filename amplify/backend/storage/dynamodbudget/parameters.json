@@ -1,0 +1,5 @@
+{
+    "tableName": "budget",
+    "partitionKeyName": "sessionId",
+    "partitionKeyType": "S"
+}

@@ -9,6 +9,7 @@ export default function BudgetBall(props:budgetProps){
     let style={height:ballSize+"px", width:ballSize+"px", backgroundColor:"#"+props.ball.color}
     let shineStyle={height:ballSize+"px", width:ballSize+"px"}
 
+    console.log(process.env);
     function change(e:React.FormEvent<HTMLInputElement>){
         e.preventDefault(); 
         if(e.currentTarget.id==="title"){

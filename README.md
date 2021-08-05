@@ -1,4 +1,4 @@
-# Budget Balls
+# Budget Ball
 #### I tried to think of a better name, but this one stuck
 A quick and visual way to budget resources. Monthly budgets, group holiday expenses, &c.
 
